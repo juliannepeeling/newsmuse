@@ -1,0 +1,24 @@
+{
+  "name": "newsmuse",
+  "version": "1.0.0",
+  "description": "NewsMuse is a prototype of a newspaper design database for newspaper copy editors and page designers seeking inspiration for their next layout.",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/browser-sync  start --server --files='**/*'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliannepeeling/newsmuse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliannepeeling/newsmuse/issues"
+  },
+  "homepage": "https://github.com/juliannepeeling/newsmuse#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
