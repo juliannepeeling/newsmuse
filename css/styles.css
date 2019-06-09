@@ -1,13 +1,21 @@
+/* BASE STYLING */
+
 html {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #ffffff;
 }
+
+/* HEADER STYLING */
+
 /* Style the header background and add padding */
 .header {
   overflow: hidden;
   background-color: #000000;
-  padding: 20px 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20 px;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -49,50 +57,109 @@ html {
   margin-right: 50px;
 }
 
-/* body content */
-body {
-  margin-top: 100px; /* Add a top margin to avoid content overlay */
+/* MAIN STYLING */
+
+/* Create flexible layout with flexbox */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* aligns the flex items at the top of the container */
+}
+
+/* Add padding between the news pages on the Index page */
+.page {
+  padding: 5px;
+}
+
+/* Style the size of news pages on the Index page */
+.page img {
+  width: 325px;
+}
+
+/* Style the main body content */
+main {
+  padding-top: 90px; /* Add a top margin to prevent header from covering body */
   background-color: #000000;
 }
-body a {
+
+/* Style the body links */
+main a {
   color: #ffffff;
   text-decoration: none;
 }
-body a:hover {
+
+/* Style the body links on hover */
+main a:hover {
   color: #dc143c;
 }
-.about {
-  text-align: left;
-}
-.thesaurus {
-  text-align: center;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-h1 {
+
+/* Style the text on all pages */
+h2 {
   font-size: 20px;
   text-decoration: underline;
 }
-h2 {
+h3 {
   font-size: 18px;
 }
 p {
   font-size: 16px;
-  margin-left: 150px;
-  margin-right: 150px;
-}
-.page {
-  /*News page designs should be floated to the left*/
-  float: left;
-  margin-right: 50px;
-  margin-left: 300px;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
+/* Make the text on the About page left aligned */
+.aboutText {
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Make the text on the Thesaurus page centered */
+.thesaurusText {
+  text-align: center;
+}
+
+/* Make the text on the References page left aligned */
+.referencesText {
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Add padding to the standalone news pages */
+.standalone {
+  padding-right: 50px;
+}
+
+/* Make the text in the descriptions of standalone news pages left aligned */
+.description {
+  text-align: left;
+}
+
+/* Add horizontal rules to the Thesaurus page */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ffffff;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Make the photo on the About page and the standalone news pages responsive */
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add padding to standalone news pages */
+.standalone {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+/* Add media queries for responsiveness - when the screen is 600px wide or less, stack the links on top of each other */
+@media screen and (max-width: 768px) {
   .header a {
     float: none;
     display: block;
@@ -101,39 +168,7 @@ p {
   .header-right {
     float: none;
   }
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 6px;
-}
-
-/* Create four equal columns that sit next to each other */
-.column {
-  flex: 24%;
-  max-width: 24%;
-  padding: 0 6px;
-}
-
-.column img {
-  margin-top: 12px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
+  .container {
+    padding-top: 200px;
   }
 }
