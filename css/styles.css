@@ -1,13 +1,16 @@
 html {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 20px;
+  color: #ffffff;
 }
 /* Style the header background and add padding */
 .header {
   overflow: hidden;
   background-color: #000000;
   padding: 20px 10px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 /* Style the header links */
@@ -22,13 +25,13 @@ html {
   border-radius: 4px;
 }
 
-/* Style the logo link (value of line-height and font-size equal to prevent the header from increasing when the font gets bigger */
+/* Style the logo link */
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
 }
 
-/* Change the background color on mouse-over */
+/* Change the background color when mouse hovers over */
 .header a:hover {
   background-color: #dcdcdc;
   color: #dc143c;
@@ -43,16 +46,49 @@ html {
 /* Float the link section to the right */
 .header-right {
   float: right;
+  margin-right: 50px;
 }
 
-/* Style the search box inside the navigation bar */
-.header input[type="text"] {
-  float: right;
-  padding: 10px;
+/* body content */
+body {
+  margin-top: 100px; /* Add a top margin to avoid content overlay */
+  background-color: #000000;
+}
+body a {
+  color: #ffffff;
   text-decoration: none;
+}
+body a:hover {
+  color: #dc143c;
+}
+.about {
+  text-align: left;
+}
+.thesaurus {
+  text-align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+h2 {
   font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
+}
+p {
+  font-size: 16px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.page {
+  /*News page designs should be floated to the left*/
+  float: left;
+  margin-right: 50px;
+  margin-left: 300px;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -66,19 +102,17 @@ html {
     float: none;
   }
 }
-body {
-  background-color: #000000;
-}
+
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 6px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create four equal columns that sit next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 24%;
+  max-width: 24%;
   padding: 0 6px;
 }
 
