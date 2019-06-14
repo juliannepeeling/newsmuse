@@ -81,6 +81,7 @@ html {
 
 /* Style the main body content */
 main {
+  background-color: #000000;
   padding-top: 90px; /* Add a top margin to prevent header from covering body */
 }
 
