@@ -1,4 +1,7 @@
 /* BASE STYLING */
+* {
+  background-color: #000000;
+}
 
 html {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
