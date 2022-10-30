@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/juliannepeeling/newsmuse#readme",
   "dependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.27.10"
   }
 }
